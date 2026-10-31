@@ -1,0 +1,160 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="Vk-MQV6VcM_UK97dMxvp">
+    <mxGraphModel dx="1813" dy="615" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;; text-decoration-line: inherit; background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff));&quot;&gt;Start by training the model n times&lt;/span&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="80" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-5" edge="1" parent="1" source="XEdzoJT5dOP6lWYg-4jX-2" style="endArrow=classic;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="XEdzoJT5dOP6lWYg-4jX-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="390" as="sourcePoint" />
+            <mxPoint x="280" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Create new NimAI() model and train it n times" vertex="1">
+          <mxGeometry height="60" width="120" x="279.9999999999998" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Perform an action" vertex="1">
+          <mxGeometry height="30" width="110" x="260" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-12" edge="1" parent="1" source="XEdzoJT5dOP6lWYg-4jX-8" style="endArrow=classic;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="XEdzoJT5dOP6lWYg-4jX-13" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="370" as="sourcePoint" />
+            <mxPoint x="315" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-13" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Game over?" vertex="1">
+          <mxGeometry height="80" width="80" x="274.9999999999998" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="if yes, adjust q-value depending on if you win or loose" vertex="1">
+          <mxGeometry height="45" width="130" x="150" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-16" edge="1" parent="1" source="XEdzoJT5dOP6lWYg-4jX-13" style="endArrow=classic;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;curved=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="340" as="sourcePoint" />
+            <mxPoint x="260" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-19" edge="1" parent="1" source="XEdzoJT5dOP6lWYg-4jX-13" style="endArrow=classic;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;curved=1;exitX=1;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="435" y="360" as="sourcePoint" />
+            <mxPoint x="370" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="If no, keep performing actions with current q-value" vertex="1">
+          <mxGeometry height="45" width="130" x="325" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-25" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.arc;startAngle=0.9580289579934987;endAngle=0.4298874187089256;labelPerimeter=1;" value="" vertex="1">
+          <mxGeometry height="225" width="255" x="275" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-26" parent="1" style="triangle;whiteSpace=wrap;html=1;shapeInside=1;rotation=-60;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="" vertex="1">
+          <mxGeometry height="30" width="20" x="510" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-28" parent="1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="keep looping&lt;div&gt;until game is&lt;/div&gt;&lt;div&gt;over&lt;/div&gt;" vertex="1">
+          <mxGeometry height="45" width="80" x="440" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-29" edge="1" parent="1" source="XEdzoJT5dOP6lWYg-4jX-6" style="endArrow=classic;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="XEdzoJT5dOP6lWYg-4jX-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="330" as="sourcePoint" />
+            <mxPoint x="520" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-31" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="Have we played n games to train?" vertex="1">
+          <mxGeometry height="110" width="100" x="160" y="428" as="geometry" />
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-32" edge="1" parent="1" source="XEdzoJT5dOP6lWYg-4jX-15" style="endArrow=classic;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;curved=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="XEdzoJT5dOP6lWYg-4jX-31" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="330" as="sourcePoint" />
+            <mxPoint x="520" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-33" parent="1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="To train..." vertex="1">
+          <mxGeometry height="30" width="80" x="200" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-34" edge="1" parent="1" source="XEdzoJT5dOP6lWYg-4jX-31" style="endArrow=classic;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;curved=1;exitX=1;exitY=1;exitDx=0;exitDy=0;" target="XEdzoJT5dOP6lWYg-4jX-35" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="270" y="538" as="sourcePoint" />
+            <mxPoint x="280" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-35" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="If yes, now play with human" vertex="1">
+          <mxGeometry height="30" width="110" x="241" y="554" as="geometry" />
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-39" edge="1" parent="1" source="XEdzoJT5dOP6lWYg-4jX-31" style="endArrow=classic;html=1;rounded=0;fontSize=12;defaultLabelBackgroundColor=page;startSize=8;endSize=8;curved=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="470" y="320" as="sourcePoint" />
+            <mxPoint x="160" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Play a new game, perform an action" vertex="1">
+          <mxGeometry height="30" width="120" x="87" y="563" as="geometry" />
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-43" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.arc;startAngle=0.056401315861001215;endAngle=0.5646325133612693;labelPerimeter=1;rotation=-180;" value="" vertex="1">
+          <mxGeometry height="440" width="470" x="-70" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-44" parent="1" style="triangle;whiteSpace=wrap;html=1;shapeInside=1;rotation=-90;fillColor=light-dark(#FFFFFF,#FFFFFF);" value="" vertex="1">
+          <mxGeometry height="40" width="20" x="-80" y="387.5" as="geometry" />
+        </mxCell>
+        <mxCell id="XEdzoJT5dOP6lWYg-4jX-45" parent="1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="keep looping&lt;div&gt;until n training games are played&lt;/div&gt;" vertex="1">
+          <mxGeometry height="87.5" width="80" x="-40" y="372.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Nn2ZEKY5-F3xl4OuYJQu-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="AI or Human has first play and performs a move/action" vertex="1">
+          <mxGeometry height="45" width="150" x="320" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="Nn2ZEKY5-F3xl4OuYJQu-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Change the state of the environment (in this case, the piles) to reflect the move" vertex="1">
+          <mxGeometry height="60" width="120" x="190" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="Nn2ZEKY5-F3xl4OuYJQu-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="if no, Switch player, and they do a move/action" vertex="1">
+          <mxGeometry height="45" width="120" x="350" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="Nn2ZEKY5-F3xl4OuYJQu-6" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="check if game is over" vertex="1">
+          <mxGeometry height="80" width="80" x="200" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="Nn2ZEKY5-F3xl4OuYJQu-8" edge="1" parent="1" source="Nn2ZEKY5-F3xl4OuYJQu-1" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="Nn2ZEKY5-F3xl4OuYJQu-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="770" as="sourcePoint" />
+            <mxPoint x="400" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nn2ZEKY5-F3xl4OuYJQu-9" edge="1" parent="1" source="Nn2ZEKY5-F3xl4OuYJQu-2" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" target="Nn2ZEKY5-F3xl4OuYJQu-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="770" as="sourcePoint" />
+            <mxPoint x="400" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nn2ZEKY5-F3xl4OuYJQu-10" edge="1" parent="1" style="endArrow=classic;startArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="Nn2ZEKY5-F3xl4OuYJQu-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="920" />
+            </Array>
+            <mxPoint x="210" y="1011.0309278350516" as="sourcePoint" />
+            <mxPoint x="400" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nn2ZEKY5-F3xl4OuYJQu-12" edge="1" parent="1" source="Nn2ZEKY5-F3xl4OuYJQu-3" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="Nn2ZEKY5-F3xl4OuYJQu-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="880" as="sourcePoint" />
+            <mxPoint x="400" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nn2ZEKY5-F3xl4OuYJQu-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Loop until game is over/winner determined" vertex="1">
+          <mxGeometry height="30" width="60" x="270" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="Nn2ZEKY5-F3xl4OuYJQu-14" edge="1" parent="1" source="XEdzoJT5dOP6lWYg-4jX-35" style="endArrow=classic;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="Nn2ZEKY5-F3xl4OuYJQu-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="720" as="sourcePoint" />
+            <mxPoint x="400" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nn2ZEKY5-F3xl4OuYJQu-15" parent="1" style="whiteSpace=wrap;html=1;shape=mxgraph.basic.document" value="&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b&gt;&lt;u&gt;Project Goal:&lt;/u&gt;&lt;/b&gt; Create an AI model to play the game of Nim against&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;MVP Scope:&lt;/u&gt;&lt;/b&gt; Code a q-learning model that I can play with in my terminal&lt;/div&gt;" vertex="1">
+          <mxGeometry height="225" width="170" x="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Nn2ZEKY5-F3xl4OuYJQu-16" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="If yes, declare winner and end game." vertex="1">
+          <mxGeometry height="80" width="120" x="140" y="1010" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
