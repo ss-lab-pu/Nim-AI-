@@ -1,6 +1,8 @@
 # Nim-AI-
 Project Goal: Create an AI model to play the game of Nim against 
+
 MVP Scope: Code a q-learning model that I can play with in my terminal 
+
 Schedule: 
     1. Set up Git repo and environment
     2. establish initial game setup (switch player, available actions methods, etc) 
