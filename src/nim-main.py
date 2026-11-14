@@ -69,4 +69,40 @@ class Nim():
         if all(pile == 0 for pile in self.piles):
             self.winner = self.player
 
+class NimAI(): 
+
+    def __init__(self, alpha=0.5, epsilon=0.1):
+        """
+        Initialize AI with an empty Q-learning dictionary,
+        an alpha (learning) rate, and an epsilon rate.
+
+        The Q-learning dictionary maps `(state, action)`
+        pairs to a Q-value (a number).
+         - `state` is a tuple of remaining piles, e.g. (1, 1, 4, 4)
+         - `action` is a tuple `(i, j)` for an action
+        """
+        self.q = dict()
+        self.alpha = alpha
+        self.epsilon = epsilon
+
+    def update(self, old_state, action, new_state, reward):
+        """
+        Update Q-learning model, given an old state, an action taken
+        in that state, a new resulting state, and the reward received
+        from taking that action.
+        """
+        old = self.get_q_value(old_state, action)
+        best_future = self.best_future_reward(new_state)
+        self.update_q_value(old_state, action, old, reward, best_future)
+
+    def get_q_value(self, state, action):
+        """
+        Return the Q-value for the state `state` and the action `action`.
+        If no Q-value exists yet in `self.q`, return 0.
+        """
+        state = tuple(state)  # Ensure state is a tuple
+        if (state, action) in self.q:
+            return self.q[(state, action)]
+        else:
+            return 0
 
