@@ -17,6 +17,8 @@ Schedule:
     
     6. create play method where the ai is playing against the human, navigate gameflow. 
 
+    7. Add levels of difficulty (Part of Scheduled Tab in Eishenhower Diagram)
+
 Tech Stack: 
 
     1. python 
