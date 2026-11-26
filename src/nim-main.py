@@ -69,6 +69,7 @@ class Nim():
         if all(pile == 0 for pile in self.piles):
             self.winner = self.player
 
+
 class NimAI(): 
 
     def __init__(self, alpha=0.5, epsilon=0.1):
@@ -105,11 +106,12 @@ class NimAI():
             return self.q[(state, action)]
         else:
             return 0
-     def update_q_value(self, state, action, old_q, reward, future_rewards):
+
+    def update_q_value(self, state, action, old_q, reward, future_rewards):
         """
         Update the Q-value for the state `state` and the action `action`
         given the previous Q-value `old_q`, a current reward `reward`,
-        and an estiamte of future rewards `future_rewards`.
+        and an estimate of future rewards `future_rewards`.
 
         Use the formula: 
 
@@ -173,3 +175,62 @@ class NimAI():
                         max_q = q_value
                         best_action = action
                 return best_action
+
+
+def train(n):
+    """
+    Train an AI by playing `n` games against itself.
+    """
+
+    player = NimAI()
+
+    # Play n games
+    for i in range(n):
+        print(f"Playing training game {i + 1}")
+        game = Nim()
+
+        # Keep track of last move made by either player
+        last = {
+            0: {"state": None, "action": None},
+            1: {"state": None, "action": None}
+        }
+
+        # Game loop
+        while True:
+
+            # Keep track of current state and action
+            state = game.piles.copy()
+            action = player.choose_action(game.piles)
+
+            # Keep track of last state and action
+            last[game.player]["state"] = state
+            last[game.player]["action"] = action
+
+            # Make move
+            game.move(action)
+            new_state = game.piles.copy()
+
+            # When game is over, update Q values with rewards
+            if game.winner is not None:
+                player.update(state, action, new_state, -1)
+                player.update(
+                    last[game.player]["state"],
+                    last[game.player]["action"],
+                    new_state,
+                    1
+                )
+                break
+
+            # If game is continuing, no rewards yet
+            elif last[game.player]["state"] is not None:
+                player.update(
+                    last[game.player]["state"],
+                    last[game.player]["action"],
+                    new_state,
+                    0
+                )
+
+    print("Done training")
+
+    # Return the trained AI
+    return player
